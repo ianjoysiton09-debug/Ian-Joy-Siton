@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif; }
+        body { background:#f5f5f5; color:#333; }
+
+        header {
+            background:#4A90E2;
+            color:white;
+            padding:60px 20px;
+            text-align:center;
+        }
+        header img {
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
+            margin-bottom:20px;
+        }
+        header h1 { font-size:2.5rem; margin-bottom:10px; }
+        header p { font-size:1.2rem; }
+
+        nav {
+            background:#333;
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+        nav a {
+            color:white;
+            text-decoration:none;
+            padding:15px 25px;
+            transition:0.3s;
+        }
+        nav a:hover { background:#4A90E2; }
+
+        section {
+            padding:60px 20px;
+            max-width:1000px;
+            margin:auto;
+        }
+        section h2 {
+            text-align:center;
+            margin-bottom:40px;
+            color:#4A90E2;
+        }
+
+        .card {
+            background:white;
+            padding:20px;
+            border-radius:15px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.1);
+            text-align:center;
+        }
+        .card h3 { margin-bottom:15px; color:#333; }
+        .card p { font-size:0.95rem; }
+
+        .about, .contact {
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+            justify-content:center;
+        }
+
+        .photos {
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+            gap:20px;
+        }
+        .photo-card img {
+            width:100%;
+            border-radius:10px;
+            object-fit:contain;
+            transition:0.3s;
+        }
+        .photo-card img:hover { transform:scale(1.05); }
+
+        footer {
+            text-align:center;
+            padding:30px 20px;
+            background:#333;
+            color:white;
+        }
+
+        @media(max-width:600px){
+            nav { flex-direction:column; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="home">
+    <img src="https://scontent.fceb2-1.fna.fbcdn.net/v/t39.30808-6/594073512_1379140923891472_1267734222008398146_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFvZr7XKk2YlSz01-B22chXylOcFrLOip3KU5wWss6KnUtP8oLFJk0C35EOimdQxUb8Gdf_ozqIdsCzIdaAzOa_&_nc_ohc=4hb6FZJNbNkQ7kNvwGiOk7u&_nc_oc=AdnFynZLxVdoBRcPkTDgL40frpceynkzfoYOaGOcEfWjw-3r2wW5tTsRlqCPcrWwKYo&_nc_zt=23&_nc_ht=scontent.fceb2-1.fna&_nc_gid=HrrwPACfIxrfZk43Qx2aTA&oh=00_Afkhnhs3NU2BuoNH-va8M4NAmMTE8BqIALLNkXavqZZuaw&oe=693DB0E9" alt="Avatar">
+
+    <h1>Welcome to MyPortfolio</h1>
+    <p>I am Fourth Year Student with a Course of BSIS</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#photos">Photos</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="about">
+        <div class="card">
+            <p>
+                I am a BSIS student passionate about technology and learning.
+                I am a loving father to my son and a devoted partner.
+                This portfolio reflects my journey, my skills, and the passions that drive me every day.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PHOTOS SECTION -->
+<section id="photos">
+    <h2>Photos</h2>
+
+    <div class="photos">
+
+        <div class="photo-card">
+            <img src="https://scontent.fceb2-2.fna.fbcdn.net/v/t39.30808-6/480702953_1157617206043846_2980427330464669960_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGFijmBpWzcTnbbxKXjY7Qlk7GyIZBcB2aTsbIhkFwHZv-Ws_Hw2uiQET6rwLLkyuEJdKWNYzcpib_SG7XJhlFl&_nc_ohc=5CgPv0bqq5IQ7kNvwGxsKKg&_nc_oc=AdkspBa_3agDmXCA2uql0xG4uhQwtM6xLJc03XTGhcBvpm3WdG2r9g2KTvs1gdryZ4o&_nc_zt=23&_nc_ht=scontent.fceb2-2.fna&_nc_gid=g6Ok1zhrgMR2pZWEyW0pjQ&oh=00_AfmbAqnvVITPIB0Qh6nvEPHl6nZkLAH_RwknzgE2AjOGkA&oe=693D9E23">
+        </div>
+
+        <div class="photo-card">
+            <img src="https://scontent.fceb2-2.fna.fbcdn.net/v/t39.30808-6/480548113_2019561138565044_6997823497212575648_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeGu-S78hFKgl4iT9_S_2vbTPXTCS1NalnI9dMJLU1qWcsNZiey0taXvR7JhbqzPKPAx9Fl8ZCgy0nn9hUGqsWi1&_nc_ohc=c3Xk7Z9YI-sQ7kNvwEzuFAB&_nc_oc=AdkCmsjosOXNcIWw31NeOq-mKX1BtY0QC_FutUcyu5ZZ-2lCGa_XJQHqJ54aQP4iJ4U&_nc_zt=23&_nc_ht=scontent.fceb2-2.fna&_nc_gid=Ht2L4PZPijM5KmxauztXMQ&oh=00_Afl2-ELSVPiMWO-gbVOBw0k3x1YXjzVjyi3nARzzBr0l2g&oe=693DB8DA">
+        </div>
+
+        <div class="photo-card">
+            <img src="https://scontent.fceb6-4.fna.fbcdn.net/v/t39.30808-6/481271928_1163729025432664_4729189083196647755_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeEz7T7a83Rnps3G6q0S5TyLjdIJWQUosLWN0glZBSiwtVTy0XhG0pgMNcNJuidZMVu5x7kd_lkfTm07lD4VelbR&_nc_ohc=2Xb45GS5yygQ7kNvwGaqsAl&_nc_oc=Admp9bRsdqfGl4Xv0MZ28R0_Ue195ZqO36H2RCLxohVzYG5mbm3FoA1RH9Dv6U9_QrI&_nc_zt=23&_nc_ht=scontent.fceb6-4.fna&_nc_gid=dRvdeFxDWDzHZTgxft5sZA&oh=00_AfmiyBKyukYxPe5OzL_rijkKnWyRGlpBUytUmfyZPlyXlw&oe=693DA4B5">
+        </div>
+
+        <div class="photo-card">
+            <img src="https://scontent.fceb2-2.fna.fbcdn.net/v/t39.30808-6/480290838_1154932879645612_8299697134291505234_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFrufDpCVc9Dz0o8Q43OPoktX8bq89he2q1fxurz2F7amvqrN7K-cOZ0NruR_ylN45zU4PK0JLeYsE4YV6gzIVs&_nc_ohc=x7KHVGjwJEEQ7kNvwGaKekD&_nc_oc=AdlbJ_bjfPborVWT4Wt1ACj_nPlaP9g8G1YpW5iTFcDnxMOqMsi10hAqWGLH9__Nn44&_nc_zt=23&_nc_ht=scontent.fceb2-2.fna&_nc_gid=WebAusiwEsyW5nCHh8rl3w&oh=00_AflpH-Ogbxx7jj_oVgwRqR-AWDJG68wNEq6dXi2DpqsQFA&oe=693DBE5D">
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact">
+        <div class="card">
+            <h3>Email</h3>
+            <p>ianjoysiton09@gmail.com</p>
+        </div>
+
+        <div class="card">
+            <h3>Phone</h3>
+            <p>09934125502</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    &copy; 2025 Welcome to MyPortfolio. All rights reserved.
+</footer>
+
+</body>
+</html>
